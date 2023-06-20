@@ -38,6 +38,7 @@ public class Main {
         i = Integer.parseInt(br.readLine());
         System.out.println(i);
 
+
         1011
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         char c = br.readLine().charAt(0);
@@ -82,6 +83,68 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split("-");
         System.out.println(str[0] + str[1]);
+
+        1021
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str = br.readLine();
+        System.out.println(str);
+
+        1022
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str = br.readLine();
+        System.out.println(str);
+
+        1023
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split("[.]");
+        for (var i: num){
+            System.out.println(i);
+        }
+
+        1024
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str[] = br.readLine().split("");
+        for (var i: str){
+            System.out.println("'" + i + "'");
+        }
+
+        1025
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str[] = br.readLine().split("");
+        int count = str.length;
+        for (var i: str){
+            count = count - 1;
+            double num = Integer.parseInt(i) * Math.pow(10, count);
+            System.out.println("[" + (int) num + "]");
+        }
+
+        1026
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String time[] = br.readLine().split(":");
+        System.out.println(time[1]);
+
+        1027
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String birth[] = br.readLine().split("[.]");
+        System.out.printf(birth[2]);
+        for(int i = 1; i>=0; i--){
+            System.out.printf("-" + birth[i]);
+        }
+
+        1028
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.println(Long.parseLong(num));
+
+        1029
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        double num = Double.parseDouble(br.readLine());
+        System.out.printf("%.11f", num);
+
+        1030
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.println(Long.parseLong(num));
  */
     }
 }
