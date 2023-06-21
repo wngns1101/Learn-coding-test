@@ -145,6 +145,56 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.println(Long.parseLong(num));
+
+        1031
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.printf("%o", Integer.parseInt(num));
+
+        1032
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.printf("%x", Integer.parseInt(num));
+
+        1033
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.printf("%X", Integer.parseInt(num));
+
+        1034
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.printf("%d", Integer.parseInt(num, 8));
+
+        1035
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.printf("%o", Integer.parseInt(num, 16));
+
+        1036
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.printf("%d", num.codePointAt(0));
+
+        1037
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        System.out.println((char)num);
+
+        1038
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        System.out.println(Integer.parseInt(num[0]) + Integer.parseInt(num[1]));
+
+        1039
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        System.out.println(Long.parseLong(num[0]) + Long.parseLong(num[1]));
+
+        1040
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num = br.readLine();
+        System.out.println(-Integer.parseInt(num));
  */
     }
 }
