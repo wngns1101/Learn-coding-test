@@ -195,6 +195,180 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.println(-Integer.parseInt(num));
+
+        1041
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        char num = br.readLine().charAt(0);
+        System.out.println((char)((int)num+1));
+
+        1042
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str[] = br.readLine().split(" ");
+        System.out.println(Integer.parseInt(str[0]) / Integer.parseInt(str[1]));
+
+        1043
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str[] = br.readLine().split(" ");
+        System.out.println(Integer.parseInt(str[0]) % Integer.parseInt(str[1]));
+
+        1044
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Long num = Long.parseLong(br.readLine());
+        System.out.println(++num);
+
+        1045
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        System.out.println(firstNum + secondNum);
+        System.out.println(firstNum - secondNum);
+        System.out.println(firstNum * secondNum);
+        System.out.println(firstNum / secondNum);
+        System.out.println(firstNum % secondNum);
+        System.out.println(String.format("%.2f", (float)firstNum / (float)secondNum));
+
+        1046
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        int thirdNum = Integer.parseInt(num[2]);
+        int sum = firstNum + secondNum + thirdNum;
+        System.out.println(sum);
+        System.out.println((float)sum / 3);
+
+        1047
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        System.out.println(num << 1);
+
+        1048
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        System.out.println((int)(firstNum * Math.pow(2, secondNum)));
+
+        1049
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if (firstNum > secondNum){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1050
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if (firstNum == secondNum){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1051
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if (secondNum >= firstNum) {
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1052
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if (secondNum != firstNum) {
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1053
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        if (num == 0){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1054
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if (firstNum == 1 && secondNum == 1) {
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1055
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if (firstNum == 1 || secondNum == 1){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1056
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if((firstNum==1 && secondNum==0) || (firstNum==0 && secondNum==1)) {
+            System.out.print(1);
+        }else {
+            System.out.print(0);
+        }
+
+        1057
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if((firstNum == 1 && secondNum == 1) && (firstNum == 0 && secondNum == 0)){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1058
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        if(firstNum == 0 && secondNum == 0){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+        1059
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        System.out.println(~num);
+
+        1060
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        System.out.println(firstNum & secondNum);
  */
     }
 }
