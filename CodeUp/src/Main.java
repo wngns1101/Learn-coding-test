@@ -369,6 +369,131 @@ public class Main {
         int firstNum = Integer.parseInt(num[0]);
         int secondNum = Integer.parseInt(num[1]);
         System.out.println(firstNum & secondNum);
+
+        1061
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        System.out.println(firstNum | secondNum);
+
+        1062
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        System.out.println(firstNum ^ secondNum);
+
+        1063
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        System.out.println(firstNum > secondNum ? firstNum : secondNum );
+
+        1064
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        int thirdNum = Integer.parseInt(num[2]);
+        System.out.println((firstNum < secondNum && firstNum < thirdNum)? firstNum: (secondNum < thirdNum)? secondNum: thirdNum );
+
+        1065
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        for (var i: num){
+            if (Integer.parseInt(i) % 2 == 0){
+                System.out.println(i);
+            }
+        }
+
+        1066
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        for (var i : num){
+            if (Integer.parseInt(i) % 2 == 0){
+                System.out.println("even");
+            }else{
+                System.out.println("odd");
+            }
+        }
+
+        1067
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        long num = Long.parseLong(br.readLine());
+        if (num < 0){
+            System.out.println("minus");
+        }else{
+            System.out.println("plus");
+        }
+        if (num % 2 == 0){
+            System.out.println("even");
+        }else{
+            System.out.println("odd");
+        }
+
+        1068
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        if(num >= 90){
+            System.out.println("A");
+        }else if(num >= 70 && num <= 90){
+            System.out.println("B");
+        }else if(num >= 40 && num <= 70){
+            System.out.println("C");
+        }else{
+            System.out.println("D");
+        }
+
+        1069
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        char num = br.readLine().charAt(0);
+        switch (num){
+            case 'A':
+                System.out.println("best!!");
+                break;
+            case 'B':
+                System.out.println("good!!");
+                break;
+            case 'C':
+                System.out.println("run!");
+                break;
+            default:
+                System.out.println("slowly~");
+                break;
+        }
+
+        1070
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int month = Integer.parseInt(br.readLine());
+        switch(month) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("winter");
+                break;
+
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("spring");
+                break;
+
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("summer");
+                break;
+
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("fall");
+                break;
+
+        }
+
  */
     }
 }
