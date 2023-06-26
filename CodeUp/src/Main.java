@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -494,6 +495,110 @@ public class Main {
 
         }
 
+        1071
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        for (var i: num) {
+            if (i.equals("0")) {
+                break;
+            }else{
+                System.out.println(i);
+            }
+        }
+
+        1072
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int count = Integer.parseInt(br.readLine());
+        String num[] = br.readLine().split(" ");
+        for (int i = 0; i < count; i++) {
+            System.out.println(num[i]);
+        }
+
+        1073
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        while(true) {
+            int num = Integer.parseInt(br.readLine());
+            if (num == 0) {
+                break;
+            } else {
+                System.out.println(num);
+            }
+
+        }
+
+        1074
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int count = Integer.parseInt(br.readLine());
+        for (int i = count; i > 0; i--) {
+            System.out.println(i);
+        }
+
+        1075
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int count = Integer.parseInt(br.readLine());
+        for (int i = count-1; i >= 0; i--) {
+            System.out.println(i);
+        }
+
+        1076
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String alpabet = br.readLine();
+        int num = alpabet.codePointAt(0);
+        int count = 97;
+        while (true) {
+            if (num == count){
+                System.out.print((char)count);
+                break;
+            }
+            System.out.print((char)count + " ");
+            count++;
+        }
+
+        1077
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int count = Integer.parseInt(br.readLine());
+        for (int i=0; i<=count; i++){
+            System.out.println(i);
+        }
+
+        1078
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int count = Integer.parseInt(br.readLine());
+        int sum = 0;
+        for (int i = 1; i <= count; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+        System.out.println(sum);
+
+        1079
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            char a = sc.next().charAt(0);
+            if (a == 'q') {
+                System.out.println(a);
+                break;
+            }
+            System.out.println(a);
+        }
+
+        1080
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        int sum = 0;
+        int count = 0;
+        int startNum = 1;
+        while(true){
+            if (sum >= num){
+                System.out.println(count);
+                break;
+            }
+            sum += startNum;
+            count++;
+            startNum++;
+        }
+        
  */
     }
 }
