@@ -598,7 +598,115 @@ public class Main {
             count++;
             startNum++;
         }
-        
+
+        1081
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        for(int i=1; i<=firstNum; i++){
+            for (int j=1; j<=secondNum; j++){
+                System.out.println(i + " " + j);
+            }
+        }
+
+        1082
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine(), 16);
+        for(int i=1; i<=16; i++){
+            System.out.println("B*"+Integer.toHexString(i)+"="+Integer.toHexString(num*i));
+        }
+
+        1083
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        for(int i=1; i<=num; i++){
+            if(i % 3 == 0) {
+                System.out.print("X" + " ");
+            }else{
+                System.out.print(i + " ");
+            }
+        }
+
+        1084
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        int thirdNum = Integer.parseInt(num[2]);
+        for (int i=0; i<thirdNum; i++){
+            for (int j=0; j<secondNum; j++){
+                for (int k=0; k<firstNum; k++){
+                    System.out.println(i + " " + j + " " + k);
+                }
+            }
+        }
+        System.out.println(firstNum*secondNum*thirdNum);
+
+        1085
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        double firstNum = Integer.parseInt(num[0]);
+        double secondNum = Integer.parseInt(num[1]);
+        double thirdNum = Integer.parseInt(num[2]);
+        double fourthNum = Integer.parseInt(num[3]);
+        double result = (((firstNum * secondNum * thirdNum * fourthNum) / 8) / 1024)/1024;
+        System.out.printf("%.1fMB", result);
+
+        1086
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        double firstNum = Integer.parseInt(num[0]);
+        double secondNum = Integer.parseInt(num[1]);
+        double thirdNum = Integer.parseInt(num[2]);
+        double result = firstNum * secondNum * thirdNum / 1024 / 1024 / 8;
+        System.out.printf("%.2fMB", result);
+
+        1087
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        int sum = 0;
+        int count = 1;
+        while(true){
+            if (sum >= num){
+                System.out.println(sum);
+                break;
+            }
+            sum += count;
+            count++;
+        }
+
+        1088
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
+        for (int i = 0; i <= num; i++) {
+            if(i % 3 != 0){
+                System.out.print(i + " ");
+            }
+        }
+
+        1089
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        int thirdNum = Integer.parseInt(num[2]);
+        for (int i = 1; i < thirdNum; i++) {
+            firstNum += secondNum;
+        }
+        System.out.println(firstNum);
+
+        1090
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        int thirdNum = Integer.parseInt(num[2]);
+        for (int i = 1; i < thirdNum; i++) {
+            firstNum *= secondNum;
+        }
+        System.out.println(firstNum);
+
  */
     }
 }
