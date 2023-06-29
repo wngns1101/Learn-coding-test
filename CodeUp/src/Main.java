@@ -1,6 +1,10 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -706,6 +710,89 @@ public class Main {
             firstNum *= secondNum;
         }
         System.out.println(firstNum);
+
+        1091
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        int thirdNum = Integer.parseInt(num[2]);
+        int fourthNum = Integer.parseInt(num[3]);
+        for (int i = 1; i < fourthNum; i++) {
+            firstNum = (firstNum * secondNum) + thirdNum;
+        }
+        System.out.println(firstNum);
+    }
+
+        1092
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String num[] = br.readLine().split(" ");
+        int firstNum = Integer.parseInt(num[0]);
+        int secondNum = Integer.parseInt(num[1]);
+        int thirdNum = Integer.parseInt(num[2]);
+        int day = 1;
+        while (day%firstNum!=0 || day%secondNum!=0 || day%thirdNum!=0) {
+            day++;
+        }
+        System.out.println(day);
+
+        1093
+        Scanner sc = new Scanner(System.in);
+        int result[] = new int[25];
+        int count = Integer.parseInt(sc.nextLine());
+        String str = "";
+        for (int i = 0; i < count; i++) {
+            str += sc.next() + " ";
+        }
+        String sliceNums[] = str.split(" ");
+        for (var i : sliceNums) {
+            result[Integer.parseInt(i)]++;
+        }
+        for (int i = 1; i < result.length; i++) {
+            System.out.print(result[i] + " ");
+        }
+
+        1094
+        Scanner sc = new Scanner(System.in);
+        int count = Integer.parseInt(sc.nextLine());
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            result.add(Integer.parseInt(sc.next()));
+        }
+        for (int i = result.size()-1; i > 0; i--) {
+            System.out.print(result.get(i) + " ");
+        }
+
+        1095
+        Scanner sc = new Scanner(System.in);
+        int count = Integer.parseInt(sc.nextLine());
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            result.add(Integer.parseInt(sc.next()));
+        }
+        Collections.sort(result);
+        System.out.println(result.get(0));
+
+        1096
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int baduk[][] = new int[19][19];
+        int count = Integer.parseInt(br.readLine());
+        String nums[] = new String[count];
+        for(int i=0; i<count; i++) {
+            nums[i] = br.readLine();
+        }
+
+        for (var i: nums) {
+            String[] coordinate = i.split(" ");
+            baduk[Integer.parseInt(coordinate[0])-1][Integer.parseInt(coordinate[1])-1] = 1;
+        }
+
+        for(int i=0; i< baduk.length; i++) {
+            for(int j=0; j<baduk[i].length; j++){
+                System.out.print(baduk[i][j] + " ");
+            }
+            System.out.println();
+        }
 
  */
     }
