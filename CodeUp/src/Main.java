@@ -722,7 +722,6 @@ public class Main {
             firstNum = (firstNum * secondNum) + thirdNum;
         }
         System.out.println(firstNum);
-    }
 
         1092
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -790,6 +789,73 @@ public class Main {
         for(int i=0; i< baduk.length; i++) {
             for(int j=0; j<baduk[i].length; j++){
                 System.out.print(baduk[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        1097
+        Scanner sc = new Scanner(System.in);
+        int baduk[][] = new int[19][19];
+        for(int i=0; i<baduk.length; i++){
+            for(int j=0; j<baduk.length; j++){
+                baduk[i][j] = sc.nextInt();
+            }
+        }
+
+        int count = sc.nextInt();
+
+        for (int i = 0; i < count; i++) {
+            int x = sc.nextInt()-1;
+            int y = sc.nextInt()-1;
+            for (int j = 0; j < baduk.length; j++) {
+                if(baduk[x][j] == 0){
+                    baduk[x][j] = 1;
+                }else{
+                    baduk[x][j] = 0;
+                }
+            }
+            for (int j = 0; j < baduk.length; j++) {
+                if(baduk[j][y] == 0){
+                    baduk[j][y] = 1;
+                }else{
+                    baduk[j][y] = 0;
+                }
+            }
+        }
+
+        for(int i=0; i<baduk.length; i++){
+            for(int j=0; j<baduk[i].length; j++){
+                System.out.print(baduk[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        1098
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] coordinate = br.readLine().split(" ");
+        int x = Integer.parseInt(coordinate[0]);
+        int y = Integer.parseInt(coordinate[1]);
+        int[][] board = new int[x][y];
+        int count = Integer.parseInt(br.readLine());
+        for (int i = 0; i < count; i++) {
+            String stick[] = br.readLine().split(" ");
+            int length = Integer.parseInt(stick[0]);
+            int axix = Integer.parseInt(stick[1]);
+            int boardX = Integer.parseInt(stick[2])-1;
+            int boardY = Integer.parseInt(stick[3])-1;
+            if (axix == 0) {
+                for (int j = boardY; j < length; j++) {
+                    board[boardX][j] = 1;
+                }
+            }else{
+                for (int j = boardX; j <= length; j++) {
+                    board[j][boardY] = 1;
+                }
+            }
+        }
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                System.out.print(board[i][j] + " ");
             }
             System.out.println();
         }
