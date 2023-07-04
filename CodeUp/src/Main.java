@@ -861,5 +861,33 @@ public class Main {
         }
 
  */
+        Scanner sc = new Scanner(System.in);
+        int cave[][] = new int[10][10];
+        int x = 1;
+        int y = 1;
+        for(int i=0; i<cave.length; i++){
+            for(int j=0; j<cave.length; j++){
+                cave[i][j] = sc.nextInt();
+            }
+        }
+        while (true) {
+            if(cave[x][y] == 1){
+                y--;
+                x++;
+            } else if (cave[x][y] == 0) {
+                cave[x][y] = 9;
+                y++;
+            }
+            if (cave[x][y] == 2){
+                cave[x][y] = 9;
+                break;
+            }
+        }
+        for(int i=0; i<cave.length; i++){
+            for(int j=0; j<cave.length; j++){
+                System.out.print(cave[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
