@@ -67,5 +67,25 @@ public class Main {
 //        }
 //        Arrays.sort(result);
 //        System.out.println(result[x-1]);
+
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String str[] = br.readLine().split(" ");
+//        int totalNum = Integer.parseInt(str[0]);
+//        int divNum = Integer.parseInt(str[1]);
+//        int count = 0;
+//
+//        while (true) {
+//            if (totalNum == 1) {
+//                break;
+//            }
+//            if (totalNum % divNum == 0) {
+//                totalNum = totalNum / divNum;
+//                count++;
+//            }else{
+//                totalNum--;
+//                count++;
+//            }
+//        }
+//        System.out.println(count);
     }
 }
