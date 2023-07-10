@@ -9,111 +9,110 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-/*
-        1001
+//        1001
         System.out.printf("Hello");
 
-        1002
+//        1002
         System.out.printf("Hello World");
 
-        1003
+//        1003
         System.out.println("Hello");
         System.out.printf("World");
 
-        1004
+//        1004
         System.out.printf("'Hello'");
 
-        1005
+//        1005
         System.out.printf("\"Hello World\"");
 
-        1006
+//        1006
         System.out.println("!@#$%^&*()");
 
-        1007
+//        1007
         System.out.println("C:\\Download\\hello.java");
 
-        1008
+//        1008
         System.out.println("\u250C\u252C\u2510");
         System.out.println("\u251C\u253C\u2524");
         System.out.println("\u2514\u2534\u2518");
 
-        1010
+//        1010
         int i;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         i = Integer.parseInt(br.readLine());
         System.out.println(i);
 
 
-        1011
+//        1011
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         char c = br.readLine().charAt(0);
         System.out.println(c);
 
-        1012
+//        1012
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         float f = Float.parseFloat(br.readLine());
         System.out.println(f);
 
-        1013
+//        1013
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split(" ");
         System.out.println(Integer.parseInt(str[0])+ " " + Integer.parseInt(str[1]));
 
-        1014
+//        1014
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split(" ");
         System.out.println(str[1] + " " + str[0]);
 
-        1015
+//        1015
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         float num = Float.parseFloat(br.readLine());
         System.out.printf("%.3f", num);
 
-        1017
+//        1017
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         System.out.println(num + " " + num + " " + num);
 
-        1018
+//        1018
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String time[] = br.readLine().split(":");
         System.out.println(time[0] + ":" + time[1]);
 
-        1019
+//        1019
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split("[.]");
         System.out.println(str[0] + ".0" + str[1] + ".0" + str[2]);
 
-        1020
+//        1020
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split("-");
         System.out.println(str[0] + str[1]);
 
-        1021
+//        1021
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();
         System.out.println(str);
 
-        1022
+//        1022
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();
         System.out.println(str);
 
-        1023
+//        1023
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split("[.]");
         for (var i: num){
             System.out.println(i);
         }
 
-        1024
+//        1024
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split("");
         for (var i: str){
             System.out.println("'" + i + "'");
         }
 
-        1025
+//        1025
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split("");
         int count = str.length;
@@ -123,12 +122,12 @@ public class Main {
             System.out.println("[" + (int) num + "]");
         }
 
-        1026
+//        1026
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String time[] = br.readLine().split(":");
         System.out.println(time[1]);
 
-        1027
+//        1027
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String birth[] = br.readLine().split("[.]");
         System.out.printf(birth[2]);
@@ -136,92 +135,92 @@ public class Main {
             System.out.printf("-" + birth[i]);
         }
 
-        1028
+//        1028
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.println(Long.parseLong(num));
 
-        1029
+//        1029
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         double num = Double.parseDouble(br.readLine());
         System.out.printf("%.11f", num);
 
-        1030
+//        1030
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.println(Long.parseLong(num));
 
-        1031
+//        1031
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.printf("%o", Integer.parseInt(num));
 
-        1032
+//        1032
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.printf("%x", Integer.parseInt(num));
 
-        1033
+//        1033
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.printf("%X", Integer.parseInt(num));
 
-        1034
+//        1034
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.printf("%d", Integer.parseInt(num, 8));
 
-        1035
+//        1035
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.printf("%o", Integer.parseInt(num, 16));
 
-        1036
+//        1036
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.printf("%d", num.codePointAt(0));
 
-        1037
+//        1037
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         System.out.println((char)num);
 
-        1038
+//        1038
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         System.out.println(Integer.parseInt(num[0]) + Integer.parseInt(num[1]));
 
-        1039
+//        1039
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         System.out.println(Long.parseLong(num[0]) + Long.parseLong(num[1]));
 
-        1040
+//        1040
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num = br.readLine();
         System.out.println(-Integer.parseInt(num));
 
-        1041
+//        1041
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         char num = br.readLine().charAt(0);
         System.out.println((char)((int)num+1));
 
-        1042
+//        1042
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split(" ");
         System.out.println(Integer.parseInt(str[0]) / Integer.parseInt(str[1]));
 
-        1043
+//        1043
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str[] = br.readLine().split(" ");
         System.out.println(Integer.parseInt(str[0]) % Integer.parseInt(str[1]));
 
-        1044
+//        1044
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Long num = Long.parseLong(br.readLine());
         System.out.println(++num);
 
-        1045
+//        1045
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -233,7 +232,7 @@ public class Main {
         System.out.println(firstNum % secondNum);
         System.out.println(String.format("%.2f", (float)firstNum / (float)secondNum));
 
-        1046
+//        1046
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -243,19 +242,19 @@ public class Main {
         System.out.println(sum);
         System.out.println((float)sum / 3);
 
-        1047
+//        1047
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         System.out.println(num << 1);
 
-        1048
+//        1048
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
         int secondNum = Integer.parseInt(num[1]);
         System.out.println((int)(firstNum * Math.pow(2, secondNum)));
 
-        1049
+//        1049
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -266,7 +265,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1050
+//        1050
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -277,7 +276,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1051
+//        1051
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -288,7 +287,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1052
+//        1052
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -299,7 +298,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1053
+//        1053
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         if (num == 0){
@@ -308,7 +307,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1054
+//        1054
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -319,7 +318,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1055
+//        1055
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -330,7 +329,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1056
+//        1056
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -341,7 +340,7 @@ public class Main {
             System.out.print(0);
         }
 
-        1057
+//        1057
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -352,7 +351,7 @@ public class Main {
             System.out.println(0);
         }
 
-        1058
+//        1058
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -363,40 +362,40 @@ public class Main {
             System.out.println(0);
         }
 
-        1059
+//        1059
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         System.out.println(~num);
 
-        1060
+//        1060
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
         int secondNum = Integer.parseInt(num[1]);
         System.out.println(firstNum & secondNum);
 
-        1061
+//        1061
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
         int secondNum = Integer.parseInt(num[1]);
         System.out.println(firstNum | secondNum);
 
-        1062
+//        1062
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
         int secondNum = Integer.parseInt(num[1]);
         System.out.println(firstNum ^ secondNum);
 
-        1063
+//        1063
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
         int secondNum = Integer.parseInt(num[1]);
         System.out.println(firstNum > secondNum ? firstNum : secondNum );
 
-        1064
+//        1064
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -404,7 +403,7 @@ public class Main {
         int thirdNum = Integer.parseInt(num[2]);
         System.out.println((firstNum < secondNum && firstNum < thirdNum)? firstNum: (secondNum < thirdNum)? secondNum: thirdNum );
 
-        1065
+//        1065
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         for (var i: num){
@@ -413,7 +412,7 @@ public class Main {
             }
         }
 
-        1066
+//        1066
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         for (var i : num){
@@ -424,7 +423,7 @@ public class Main {
             }
         }
 
-        1067
+//        1067
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         long num = Long.parseLong(br.readLine());
         if (num < 0){
@@ -438,7 +437,7 @@ public class Main {
             System.out.println("odd");
         }
 
-        1068
+//        1068
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         if(num >= 90){
@@ -451,7 +450,7 @@ public class Main {
             System.out.println("D");
         }
 
-        1069
+//        1069
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         char num = br.readLine().charAt(0);
         switch (num){
@@ -469,7 +468,7 @@ public class Main {
                 break;
         }
 
-        1070
+//        1070
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int month = Integer.parseInt(br.readLine());
         switch(month) {
@@ -499,7 +498,7 @@ public class Main {
 
         }
 
-        1071
+//        1071
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         for (var i: num) {
@@ -510,7 +509,7 @@ public class Main {
             }
         }
 
-        1072
+//        1072
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int count = Integer.parseInt(br.readLine());
         String num[] = br.readLine().split(" ");
@@ -518,7 +517,7 @@ public class Main {
             System.out.println(num[i]);
         }
 
-        1073
+//        1073
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while(true) {
             int num = Integer.parseInt(br.readLine());
@@ -530,21 +529,21 @@ public class Main {
 
         }
 
-        1074
+//        1074
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int count = Integer.parseInt(br.readLine());
         for (int i = count; i > 0; i--) {
             System.out.println(i);
         }
 
-        1075
+//        1075
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int count = Integer.parseInt(br.readLine());
         for (int i = count-1; i >= 0; i--) {
             System.out.println(i);
         }
 
-        1076
+//        1076
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String alpabet = br.readLine();
         int num = alpabet.codePointAt(0);
@@ -558,14 +557,14 @@ public class Main {
             count++;
         }
 
-        1077
+//        1077
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int count = Integer.parseInt(br.readLine());
         for (int i=0; i<=count; i++){
             System.out.println(i);
         }
 
-        1078
+//        1078
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int count = Integer.parseInt(br.readLine());
         int sum = 0;
@@ -576,7 +575,7 @@ public class Main {
         }
         System.out.println(sum);
 
-        1079
+//        1079
         Scanner sc = new Scanner(System.in);
         while (true) {
             char a = sc.next().charAt(0);
@@ -587,7 +586,7 @@ public class Main {
             System.out.println(a);
         }
 
-        1080
+//        1080
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         int sum = 0;
@@ -603,7 +602,7 @@ public class Main {
             startNum++;
         }
 
-        1081
+//        1081
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -614,14 +613,14 @@ public class Main {
             }
         }
 
-        1082
+//        1082
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine(), 16);
         for(int i=1; i<=16; i++){
             System.out.println("B*"+Integer.toHexString(i)+"="+Integer.toHexString(num*i));
         }
 
-        1083
+//        1083
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         for(int i=1; i<=num; i++){
@@ -632,7 +631,7 @@ public class Main {
             }
         }
 
-        1084
+//        1084
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -647,7 +646,7 @@ public class Main {
         }
         System.out.println(firstNum*secondNum*thirdNum);
 
-        1085
+//        1085
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         double firstNum = Integer.parseInt(num[0]);
@@ -657,7 +656,7 @@ public class Main {
         double result = (((firstNum * secondNum * thirdNum * fourthNum) / 8) / 1024)/1024;
         System.out.printf("%.1fMB", result);
 
-        1086
+//        1086
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         double firstNum = Integer.parseInt(num[0]);
@@ -666,7 +665,7 @@ public class Main {
         double result = firstNum * secondNum * thirdNum / 1024 / 1024 / 8;
         System.out.printf("%.2fMB", result);
 
-        1087
+//        1087
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         int sum = 0;
@@ -680,7 +679,7 @@ public class Main {
             count++;
         }
 
-        1088
+//        1088
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
         for (int i = 0; i <= num; i++) {
@@ -689,7 +688,7 @@ public class Main {
             }
         }
 
-        1089
+//        1089
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -700,7 +699,7 @@ public class Main {
         }
         System.out.println(firstNum);
 
-        1090
+//        1090
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -711,7 +710,7 @@ public class Main {
         }
         System.out.println(firstNum);
 
-        1091
+//        1091
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -723,7 +722,7 @@ public class Main {
         }
         System.out.println(firstNum);
 
-        1092
+//        1092
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String num[] = br.readLine().split(" ");
         int firstNum = Integer.parseInt(num[0]);
@@ -735,7 +734,7 @@ public class Main {
         }
         System.out.println(day);
 
-        1093
+//        1093
         Scanner sc = new Scanner(System.in);
         int result[] = new int[25];
         int count = Integer.parseInt(sc.nextLine());
@@ -751,7 +750,7 @@ public class Main {
             System.out.print(result[i] + " ");
         }
 
-        1094
+//        1094
         Scanner sc = new Scanner(System.in);
         int count = Integer.parseInt(sc.nextLine());
         List<Integer> result = new ArrayList<>();
@@ -762,7 +761,7 @@ public class Main {
             System.out.print(result.get(i) + " ");
         }
 
-        1095
+//        1095
         Scanner sc = new Scanner(System.in);
         int count = Integer.parseInt(sc.nextLine());
         List<Integer> result = new ArrayList<>();
@@ -772,7 +771,7 @@ public class Main {
         Collections.sort(result);
         System.out.println(result.get(0));
 
-        1096
+//        1096
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int baduk[][] = new int[19][19];
         int count = Integer.parseInt(br.readLine());
@@ -793,7 +792,7 @@ public class Main {
             System.out.println();
         }
 
-        1097
+//        1097
         Scanner sc = new Scanner(System.in);
         int baduk[][] = new int[19][19];
         for(int i=0; i<baduk.length; i++){
@@ -830,7 +829,7 @@ public class Main {
             System.out.println();
         }
 
-        1098
+//        1098
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] coordinate = br.readLine().split(" ");
         int x = Integer.parseInt(coordinate[0]);
@@ -860,7 +859,7 @@ public class Main {
             System.out.println();
         }
 
- */
+//        1099
         Scanner sc = new Scanner(System.in);
         int cave[][] = new int[10][10];
         int x = 1;
