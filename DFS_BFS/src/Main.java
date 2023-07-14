@@ -2,7 +2,24 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
+
+class Node {
+    int x;
+    int y;
+
+    public Node(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+}
 
 public class Main {
     public static void dfs(int[][] graph, int v, boolean[] visited) {
@@ -31,6 +48,39 @@ public class Main {
             }
         }
     }
+
+    static int maze[][] = new int[201][201];
+    static int dx[] = {1, -1, 0, 0};
+    static int dy[] = {0, 0, -1, 1};
+    static int n = 0;
+    static int m = 0;
+
+    static int mazeBfs(int x, int y){
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(new Node(x, y));
+
+        while (!queue.isEmpty()) {
+            Node node = queue.poll();
+            x = node.getX();
+            y = node.getY();
+            for (int i = 0; i < 4; i++) {
+                int nx = x + dx[i];
+                int ny = y + dy[i];
+                if (nx < 0 || nx >= n || ny < 0 || ny >= m) {
+                    continue;
+                }
+                if (maze[nx][ny] == 0) {
+                    continue;
+                }
+                if (maze[nx][ny] == 1) {
+                    maze[nx][ny] = maze[x][y] + 1;
+                    queue.add(new Node(nx, ny));
+                }
+            }
+        }
+        return maze[n-1][m-1];
+    }
+
 
     public static boolean iceBfs(int mainX, int mainY) {
         if (mainX <= -1 || mainX >= x || mainY <= -1 || mainY >= y) {
@@ -65,29 +115,42 @@ public class Main {
         System.out.println();
 
         // 예제 3
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String size[] = br.readLine().split(" ");
+//        x = Integer.parseInt(size[0]);
+//        y = Integer.parseInt(size[1]);
+//
+//
+//        for (int i = 0; i < x; i++) {
+//            String slice[] = br.readLine().split("");
+//            for (int j = 0; j < y; j++) {
+//                iceFrame[i][j] = Integer.parseInt(slice[j]);
+//            }
+//        }
+//
+//        int count = 0;
+//        for (int i = 0; i < x; i++) {
+//            for (int j = 0; j < y; j++) {
+//                if (iceFrame[i][j] == 0) {
+//                    if (iceBfs(i, j)){
+//                        count++;
+//                    }
+//                }
+//            }
+//        }
+//        System.out.println(count);
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String size[] = br.readLine().split(" ");
-        x = Integer.parseInt(size[0]);
-        y = Integer.parseInt(size[1]);
+        String coordinate[] = br.readLine().split(" ");
+        n = Integer.parseInt(coordinate[0]);
+        m = Integer.parseInt(coordinate[1]);
 
-
-        for (int i = 0; i < x; i++) {
-            String slice[] = br.readLine().split("");
-            for (int j = 0; j < y; j++) {
-                iceFrame[i][j] = Integer.parseInt(slice[j]);
+        for (int i = 0; i < n; i++) {
+            String str[] = br.readLine().split("");
+            for (int j = 0; j < m; j++) {
+                maze[i][j] = Integer.parseInt(str[j]);
             }
         }
-
-        int count = 0;
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
-                if (iceFrame[i][j] == 0) {
-                    if (iceBfs(i, j)){
-                        count++;
-                    }
-                }
-            }
-        }
-        System.out.println(count);
+        System.out.println(mazeBfs(0, 0));
     }
 }
